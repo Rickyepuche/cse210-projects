@@ -36,7 +36,7 @@ class Program
                 Console.Clear();
                 Console.WriteLine("Welcome to the Scripture Memorizer!");
                 Console.WriteLine(s.GetDisplayText());
-                Console.WriteLine("Press Enter to continue or type quit to finish:");
+                Console.WriteLine("Press Enter to hide or type quit to finish:");
 
                 if (s.IsCompletelyHidden() == true)
                 {
