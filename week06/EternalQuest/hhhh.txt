@@ -1,0 +1,2 @@
+-500
+BadHabitGoal:goon|gooooooooon|3|100|4|False

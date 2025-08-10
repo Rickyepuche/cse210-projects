@@ -1,0 +1,8 @@
+2600
+SimpleGoal:give talk|talk talk talk|100|True
+EternalGoal:study scriptures|study study study|200
+CheckListGoal:go to the temple|go go go|800|3|500|3
+CheckListGoal:eat good|food food food|500|5|1000|1
+SimpleGoal:dont shout|talk talk talk|100|False
+EternalGoal:study school book|study study study|200
+CheckListGoal:go to institute|go go go|300|3|500|2
