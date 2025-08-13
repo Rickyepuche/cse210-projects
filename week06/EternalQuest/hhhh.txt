@@ -1,2 +1,20 @@
--500
-BadHabitGoal:goon|gooooooooon|3|100|4|False
+Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as instances of a common base class. The word itself means "many forms," and in programming, it means that a single interface or method can work with different types of objects, each implementing the behavior in its own way. This is achieved through method overriding and interfaces.
+
+One major benefit of polymorphism is flexibility and extensibility. It allows developers to write code that can work with new types of objects without changing the existing code. For example, you can add new shapes to a drawing program without modifying the code that processes shapes, as long as the new shapes inherit from the base class and implement the required methods.
+
+An application of polymorphism is seen in programs that process collections of related but different objects. For instance, in my Shapes program, I created a list of different shapes (Square, Rectangle, Circle), all derived from the abstract base class Shape. Each shape implements its own version of the GetArea() method. The program can then loop through the list and call GetArea() on each shape, without knowing or caring what specific type of shape it is.
+
+Here is a code example from my program:
+
+	List<Shape> shapes = new List<Shape>();
+	shapes.Add(new Square("Red", 3));
+	shapes.Add(new Rectangle("Blue", 4, 5));
+	shapes.Add(new Circle("Green", 6));
+	foreach (Shape s in shapes)
+	{
+		double area = s.GetArea();
+		Console.WriteLine($"Area: {area}");
+	}
+
+In this example, the variable s is of type Shape, but at runtime, the correct GetArea() method is called for each specific shape. This demonstrates polymorphism, making the code more reusable and easier to maintain. If I add a new shape class, I do not need to change the loop or the way areas are calculated. Polymorphism is important because it enables scalable, modular, and adaptable code in real-world software development.
+
